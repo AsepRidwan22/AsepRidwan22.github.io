@@ -12,10 +12,11 @@
 
 /* jumbotron */
 .jumbotron {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/2@1x.jpg);
   background-size: cover;
   height: 500px;
   text-align: center;
+
   position: relative;
 }
 
