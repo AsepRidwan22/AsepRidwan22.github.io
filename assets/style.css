@@ -102,6 +102,17 @@
   margin: 10px 0px 10px 0px;
 }
 
+/* conten2 akhir */
+
+/* content about */
+.contentAbout{
+  margin: 30px 0 30px;
+}
+h1{
+  text-align: center;
+}
+/* akhir content about */
+
 /* utility */
 .tombol {
   text-transform: uppercase;
