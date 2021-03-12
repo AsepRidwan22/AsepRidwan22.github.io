@@ -1,15 +1,18 @@
-/* navbar */
-.navbar {
-  position: relative;
-  z-index: 1;
+html {
+  scroll-behavior: smooth;
 }
 
+/* navbar */
 .navbar-brand {
   font-family: viga;
   font-size: 20px;
   color: white;
 }
+#navbar .nav-link {
+  font-weight: 700;
+}
 
+/* Home */
 /* jumbotron */
 .jumbotron {
   background-image: url(../img/bali.jpg);
@@ -37,19 +40,20 @@
 .jumbotron .display-4 {
   color: white;
   font-size: 40px;
-  margin-top: 150px;
-  margin-bottom: 48px;
+  margin-top: 200px;
+  margin-bottom: 38px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   font-weight: bold;
   font-family: ‘Shift’, sans-serif;
 }
 
+/* info panel */
 .info-panel {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   margin-top: -100px;
   background-color: white;
-  padding: 30px;
+  padding: 20px;
 }
 
 .icon {
@@ -72,17 +76,23 @@
   margin-top: 5px;
   font-weight: 200;
 }
+/* akhir home */
 
-.content2 img {
+/* Best Tour */
+#bestTour img {
   width: 600px;
   border-radius: 15px;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-  margin-bottom: 80px;
 }
 
-/* content2 */
+#bestTour {
+  padding: 50px 0 40px;
+}
+
+#bestTour p {
+  margin-bottom: 30px;
+}
 .content2 {
-  margin-top: 70px;
+  margin: 70px 0 70px;
   text-align: center;
 }
 
@@ -102,16 +112,95 @@
   margin: 10px 0px 10px 0px;
 }
 
-/* conten2 akhir */
-
-/* content about */
-.contentAbout{
-  margin: 30px 0 30px;
+/* gallery */
+#gallery {
+  padding: 100px 0 100px;
 }
-h1{
+.title-gallery-feed {
+  color: #fff;
+}
+.title-gallery-feed {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.gallery-feed img {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.gallery-feed img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.more-gallery-feed {
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  width: 200px;
+}
+
+.center {
   text-align: center;
 }
-/* akhir content about */
+
+.read-more {
+  color: #666;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid #666;
+  width: 200px;
+  margin-top: -30px;
+}
+
+.more-gallery-feed:hover {
+  /* background: #333; */
+  text-decoration: none;
+  color: #fff;
+}
+/* akhir gallery */
+
+/* about */
+#about {
+  padding: 140px 0 100px;
+}
+#about h3 {
+  font-size: 50px;
+  color: #fff;
+}
+
+#about p {
+  color: #fff;
+}
+#about .row {
+  padding: 100px 0 100px;
+}
+
+.parallax {
+  background-image: url(/img/forest.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* -webkit-filter: grayscale(1); */
+}
+/* akhir about */
+
+/* footer */
+footer a,
+p,
+h6 {
+  color: #fff;
+}
 
 /* utility */
 .tombol {
@@ -121,6 +210,10 @@ h1{
   border: none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   width: 150px;
+}
+.tombol:hover {
+  background-color: #359b94;
+  margin-top: -4px;
 }
 
 /* desktop */
@@ -137,7 +230,7 @@ h1{
   .nav-link:hover::after {
     content: "";
     display: block;
-    border-bottom: solid 3px darkblue;
+    border-bottom: solid 3px white;
     margin: auto;
     width: 50%;
     padding-bottom: 5px;
